@@ -25,6 +25,7 @@ def get_token():
     if response.status_code == 200:
         return response.json()['access_token'] 
     else:
+        print(f"Got error code {response.status_code}, with error {response}")
         response.raise_for_status()
 
 #returns a  playlist from playlist id
@@ -40,6 +41,7 @@ def get_playlist(playlist_id):
     if response.status_code == 200:
         return response.json()
     else:
+        print(f"Got error code {response.status_code}, with error {response}")
         response.raise_for_status()
 
 def get_tracks(playlist_id):
