@@ -45,10 +45,3 @@ def get_playlist(playlist_id):
 def get_tracks(playlist_id):
     data = get_playlist(playlist_id)
     return data['tracks']
-
-# playlist_data = get_playlist(test_key)
-# print(playlist_data)
-
-# print(get_token())
-
-#print(get_tracks(test_key))
