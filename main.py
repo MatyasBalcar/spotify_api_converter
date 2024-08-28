@@ -5,6 +5,7 @@ import os
 
 load_dotenv()
 
+#testing key for spotify's test playlist, doesnt need to bee hidden in env
 test_key="3cEYpjA9oz9GiPac4AsH4n"
 
 #returns and auth token valid for one hour
